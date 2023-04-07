@@ -20,13 +20,17 @@ body{
     
 }
 .cabecalho{
+    background-color: #C3354B;
+    box-shadow: 0px 10px 10px #c3354a1f;
+}
+.cabecalho-ajustes{
     padding: 15px 0px 10px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #C3354B;
-    box-shadow: 0px 10px 10px #c3354a1f;
+    max-width: 1040px;
+    margin: auto;
 }
 .logo{
     font-family: 'valorant';
@@ -35,14 +39,13 @@ body{
     text-decoration: none;
 }
 .menu-topo{
-    margin: 0px 40px 0px 0px;
     font-weight: bold;
     
 }
 .menu-topo-item{
     text-decoration: none;
     color: #F2F2F2;
-    margin-right: 25px;
+    margin-left: 25px;
     transition: all 0.5s;
     position: relative;
 }
@@ -63,6 +66,10 @@ body{
 }
 .menu-topo-item:hover{
     color: #aaaaaa;
+}
+.conteudo{
+    max-width: 1200px;
+    margin: auto;
 }
 .conteudo-topo{
     padding-top: 75px;
@@ -256,20 +263,22 @@ body{
     background-color: #8d0d20;
 }
 .rodape{    
+    max-width: 1040px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
     flex-wrap: wrap-reverse;
     gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #044040;
 
 }
 .rodape-logo{
     display: flex;
     flex-direction: column;
     width: 250px;
+    /*margin-right: 50px;*/
 }
 .rodape-logo-h1{
     font-family: 'valorant';
@@ -282,8 +291,9 @@ body{
 .rodape-formulario{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 500px;
+    align-items: center;
+    width: 400px;
+
 }
 
 .rodape-formulario-label{
@@ -316,6 +326,13 @@ body{
     background-color: #8d0d20;
 }
 @media (max-width:886px){
+    .cabecalho-ajustes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
     .conteudo-topo-texto{
         text-align: center;
     }
@@ -323,6 +340,7 @@ body{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: space-around;
     }
     .rodape-logo{
         text-align: center;
@@ -337,17 +355,6 @@ body{
     
 }
 @media (max-width:650px){
-    .cabecalho{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .menu-topo{
-        display: flex;
-        align-items: center;
-        margin-left: 75px;
-    }
     .conteudo-meio-beneficio{
         text-align: center;
     }
